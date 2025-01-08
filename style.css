@@ -1,3 +1,8 @@
+@font-face {
+    font-family: god-font;
+    src: url(./font/JosefinSans-VariableFont_wght.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +11,7 @@
 
 html{
     color: #FFF;
-    font-family: sans-serif;
+    font-family: god-font, sans-serif;
 }
 
 ul{
@@ -64,6 +69,15 @@ main{
     font-size: 0.2rem;
     color: #868aba;
     gap: 10px;
+}
+
+.day-part li {
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.day-part li:hover {
+    color: #fff;
 }
 
 .special-container-content-text h3{
@@ -167,7 +181,7 @@ main section div:nth-child(7) {
 }
 
 
-@media only screen and (min-width: 1288px){
+@media only screen and (min-width: 1100px){
     .container-wrapper{
         grid-template-columns: repeat(4, 1fr);
 
@@ -221,14 +235,14 @@ main section div:nth-child(7) {
 
     .ordinary-container{
         border-radius: 16px;
-        height: 230px;
+        height: 240px;
     }
 
     .ordinary-container img {
-        width: 100px;
-        height: 100px;
-        right: 10px;
-        top: -20px;
+        width: 150px;
+        height: 150px;
+        top: -30px;
+        right: -20px;
     }
 
     .ordinary-container-content{
