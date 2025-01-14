@@ -21,12 +21,10 @@ ul{
 main{
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: 100vh;
     height: 100%;
     width: 100%;
     background-color: #0d1323;
-    padding: 10px 120px;
 }
 
 .container-wrapper{
@@ -37,7 +35,7 @@ main{
 }
 
 .special-container {
-    border-radius: 4px;
+    border-radius: 15px;
     background-color: #1d204b;
     display: flex;
     flex-direction: column;
@@ -45,6 +43,7 @@ main{
     gap: 10px;
     padding: 0 0 10px 0;
     margin-bottom: 10px;
+    height: 200px;
 }
 
 .special-container-content {
@@ -52,23 +51,24 @@ main{
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 5px;
-    border-radius: 4px;
+    padding: 15px;
+    border-radius: 15px;
     width: 100%;
 }
 
 .special-container-content img {
-    width: 20px;
-    height: 20px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     border: 1px solid white;
 }
 
 .day-part{
     display: flex;
-    font-size: 0.2rem;
+    font-size: 1rem;
     color: #868aba;
     gap: 10px;
+    padding: 20px 0 0 0 ;
 }
 
 .day-part li {
@@ -81,13 +81,13 @@ main{
 }
 
 .special-container-content-text h3{
-    font-size: 0.2rem;
+    font-size: 1rem;
     color: #868aba;
     font-weight: 100;
 }
 
 .special-container-content-text h2 {
-    font-size: 0.3rem;
+    font-size: 2rem;
     font-weight: 100;
 }
 
@@ -113,31 +113,32 @@ main section div:nth-child(7) {
     position: relative;
     overflow: hidden;
     
-    border-radius: 4px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 37px;
+    height: 200px;
+
 }
 
 .ordinary-container img {
-     width: 30px;
-     height: 30px;
-     position: absolute;
-     top: -10px;
-     right: 4px;
-     rotate: 40deg;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -10px;
+    right: 4px;
+    rotate: 40deg;
  }
 
- .ordinary-container-content {
+.ordinary-container-content {
     background-color: #1d204b;
     border-radius: 4px;
     z-index: 100;
-    padding: 5px;
+    padding: 27px;
 
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 35px;
 }
 
 .ordinary-container-content-header{
@@ -147,7 +148,7 @@ main section div:nth-child(7) {
 }
 
 .ordinary-container-content-header h4 {
-    font-size: 0.3rem;
+    font-size: 1rem;
 }
 
 .ordinary-container-content-header-menu{
@@ -158,8 +159,8 @@ main section div:nth-child(7) {
 }
 
 .ordinary-container-content-header-menu span {
-    width: 2px;
-    height: 2px;
+    width: 5px;
+    height: 5px;
     background-color: #fff;
     border-radius: 50%;
 }
@@ -172,21 +173,25 @@ main section div:nth-child(7) {
 
 .ordinary-container-content-footer h5 {
     font-weight: 100;
-    font-size: 0.3rem;
+    font-size: 1.5rem;
 }
 
 .ordinary-container-content-footer h4 {
     color: #868aba;
-    font-size: 0.2rem;
+    font-size: 1rem;
 }
 
 
-@media only screen and (min-width: 1100px){
+@media only screen and (min-width: 800px){
+    main {
+        align-items: center;
+    }
     .container-wrapper{
         grid-template-columns: repeat(4, 1fr);
 
         padding: 0 50px;
         gap: 20px;
+        height: 500px;
     }
 
     .special-container {
@@ -210,8 +215,8 @@ main section div:nth-child(7) {
     }
 
     .special-container-content img{
-        width: 80px;
-        height: 80px;
+        width: 180px;
+        height: 180px;
         border: 3px solid white;
     }
 
